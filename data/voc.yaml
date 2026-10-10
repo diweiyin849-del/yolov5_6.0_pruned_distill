@@ -1,0 +1,23 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC by University of Oxford
+# Example usage: python yolo26s-visdrone-4output-map0.398.py --data VOC.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VOC  ← downloads here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./
+train: # yolo26s-visdrone-4output-map0.398 images (relative to 'path')  16551 images
+  - VOC/images/yolo26s-visdrone-4output-map0.398
+val: # val images (relative to 'path')  4952 images
+  - VOC/images/test
+
+# Classes
+nc: 20  # number of classes
+names: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog',
+        'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'yolo26s-visdrone-4output-map0.398', 'tvmonitor']  # class names
+
+
+
